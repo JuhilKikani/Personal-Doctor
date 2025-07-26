@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e5ddd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 30%;
+    max-width: 600px;        /* tightened max width */
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.header {
+    height: 15px;
+    background-color: #075e54;
+    color: white;
+    padding: 12px 15px;      /* reduced padding */
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;         /* smaller heading for laptop */
+}
+
+.chat-box {
+    flex: 1;
+    
+    width: auto; /* thisssss */
+    height: 300px; /* thisssssss */
+
+    padding: 8px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #dcf8c6;
+}
+
+.message {
+    max-width: 75%;
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-size: 8px;
+    position: relative;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+.user {
+    align-self: flex-end;
+    background-color: #fff;
+    border-bottom-right-radius: 0;
+}
+
+.bot {
+    align-self: flex-start;
+    background-color: #fff;
+    border-bottom-left-radius: 0;
+}
+
+.input-area {
+    
+    width: auto;
+    height: 20px; /* thisssss */
+
+    display: flex;
+    padding: 6px 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f0f0f0;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    
+    height: 15px; /* thisssss*/
+    padding-top: 2px; /* thisssss*/
+    padding-bottom: 2px;  /* thiiissss */
+    padding: 8px 14px;
+    
+    padding-right: 5px;
+    padding-left: 7px;
+
+    font-size: 10px;
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    background-color: #fff;
+}
+
+button {
+    height: 22px;
+    width: 22px;
+    background-color: #075e54;
+    color: white;
+    border: none;
+    font-size: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0a6e63;
+}
+
+/* 🎯 Responsive for Mobile - UNCHANGED */
+@media screen and (max-width: 700px) {
+    .chat-container {
+        width: 95%;
+        height: 98%;
+        border-radius: 20px;
+    }
+
+    .header {
+        font-size: 20px;
+        padding: 30px 15px;
+    }
+
+    .chat-box {
+        flex: 1.5; 
+        padding: 8px;
+    }
+
+    .input-area {
+        flex-direction: row;
+        gap: 12px;
+        padding: 14px;
+    }
+
+    input {
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    button {
+        padding: 18px 20px;
+        font-size: 24px;
+        border-radius: 50%;
+    }
+}
