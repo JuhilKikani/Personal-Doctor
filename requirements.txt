@@ -1,2 +1,4 @@
 google-generativeai
 google-genai
+Flask
+gunicorn
