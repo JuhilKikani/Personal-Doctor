@@ -50,7 +50,7 @@ body {
     max-width: 75%;
     padding: 8px 12px;
     border-radius: 16px;
-    font-size: 8px;
+    font-size: 10px;
     position: relative;
     word-wrap: break-word;
     line-height: 1.4;
@@ -131,6 +131,10 @@ button:hover {
     .chat-box {
         flex: 1.5; 
         padding: 8px;
+    }
+
+    .message {
+        font-size: 16px;
     }
 
     .input-area {
