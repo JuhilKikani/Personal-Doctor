@@ -125,6 +125,7 @@ button:hover {
     .header {
         font-size: 20px;
         padding: 30px 15px;
+        height: 30px;
     }
 
     .chat-box {
@@ -136,16 +137,24 @@ button:hover {
         flex-direction: row;
         gap: 12px;
         padding: 14px;
+        height: 30px;
     }
 
     input {
         padding: 20px;
         font-size: 20px;
         border-radius: 25px;
+        height: 30px;
     }
 
     button {
-        padding: 18px 20px;
+        width: 40px;
+        height: 40px;
+        padding-left: 2px;
+        padding-bottom: 2px;
+        padding-right: 0px;
+        padding-left: 0px;
+
         font-size: 24px;
         border-radius: 50%;
     }
