@@ -34,7 +34,7 @@
 
 ## 📸 Preview
 
-![Personal Doctor Screenshot](./static/Mobile-view.png)  
+![Personal Doctor Screenshot](./static/Mobile%20view.png)  
 > *Initial user interaction and LLM-generated response.*
 
 ---
